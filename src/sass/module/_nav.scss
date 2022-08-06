@@ -1,0 +1,20 @@
+@use 'global' as *;
+
+.nav {
+}
+.nav__items {
+  display: flex;
+  align-items: center;
+}
+.nav__item {
+  font-size: 1.4rem;
+  color: $text-sub;
+  text-transform: capitalize;
+  transition: opacity 0.3s ease-in;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+.nav__item + .nav__item {
+  margin-left: 3rem;
+}

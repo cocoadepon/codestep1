@@ -1,0 +1,10 @@
+@use 'global' as *;
+
+.section-title {
+  display: inline-block;
+  font-size: 3.2rem;
+  font-weight: $bold;
+  text-transform: capitalize;
+  line-height: 1.5;
+  border-bottom: 1px solid $text;
+}

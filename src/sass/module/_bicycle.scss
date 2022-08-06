@@ -1,0 +1,20 @@
+@use 'global' as *;
+
+.bicycle {
+  margin-top: 10rem;
+}
+.bicycle_title {
+  text-align: center;
+}
+.bicycle__wrap {
+  margin-top: 6rem;
+}
+.bicycle__items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 1.6rem;
+  @include mq('md') {
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 3rem;
+  }
+}

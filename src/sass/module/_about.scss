@@ -1,0 +1,65 @@
+@use 'global' as *;
+
+.about {
+  margin-top: 8rem;
+}
+.about__inner {
+  max-width: 58.2rem;
+}
+.about__title {
+  text-align: center;
+}
+.about__area {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 7rem;
+  @include mq('md') {
+    display: block;
+    margin-top: 6rem;
+  }
+}
+.about__icon {
+  width: 18.7%;
+  position: relative;
+  background-color: red;
+  border-radius: 50%;
+  @include mq('md') {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.about__icon::before {
+  content: '';
+  display: block;
+  padding-top: 100%;
+}
+.about__icon img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: contain;
+}
+.about__lead {
+  width: calc(81.3% - #{3rem});
+  @include mq('md') {
+    width: 100%;
+  }
+}
+
+.about__name {
+  font-size: 1.6rem;
+  font-weight: $bold;
+  line-height: 1.5;
+  text-transform: uppercase;
+  @include mq('md') {
+    margin-top: 1rem;
+  }
+}
+.about__text {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+}
